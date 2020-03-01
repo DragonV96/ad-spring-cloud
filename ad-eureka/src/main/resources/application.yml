@@ -1,69 +1,69 @@
 # 单机节点
-#spring:
-#  application:
-#    name: ad-eureka
-#
-#server:
-#  port: 8000
-#
-#eureka:
-#  instance:
-#    hostname: localhost
-#  client:
-#    fetch-registry: false            # 是否同步其他节点数据（当前为单节点，无需同步）
-#    register-with-eureka: false     # 无需将自己注册到eureka服务
-#    service-url:
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
----
-# 集群节点——server1
 spring:
   application:
     name: ad-eureka
-  profiles: server1
 
 server:
   port: 8000
 
 eureka:
   instance:
-    hostname: server1
-    prefer-ip-address: false
+    hostname: localhost
   client:
+    fetch-registry: false            # 是否同步其他节点数据（当前为单节点，无需同步）
+    register-with-eureka: false     # 无需将自己注册到eureka服务
     service-url:
-      defaultZone: http://server2:8001/eurek,http://server3:8002/eureka
-
----
-# 集群节点——server2
-spring:
-  application:
-    name: ad-eureka
-  profiles: server2
-
-server:
-  port: 8001
-
-eureka:
-  instance:
-    hostname: server2
-    prefer-ip-address: false
-  client:
-    service-url:
-      defaultZone: http://server1:8000/eureka,http://server3:8002/eureka
-
----
-# 集群节点——server3
-spring:
-  application:
-    name: ad-eureka
-  profiles: server3
-
-server:
-  port: 8002
-
-eureka:
-  instance:
-    hostname: server3
-    prefer-ip-address: false
-  client:
-    service-url:
-      defaultZone: http://server1:8000/eureka,http://server2:8001/eureka
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#---
+## 集群节点——server1
+#spring:
+#  application:
+#    name: ad-eureka
+#  profiles: server1
+#
+#server:
+#  port: 8000
+#
+#eureka:
+#  instance:
+#    hostname: server1
+#    prefer-ip-address: false
+#  client:
+#    service-url:
+#      defaultZone: http://server2:8001/eurek,http://server3:8002/eureka
+#
+#---
+## 集群节点——server2
+#spring:
+#  application:
+#    name: ad-eureka
+#  profiles: server2
+#
+#server:
+#  port: 8001
+#
+#eureka:
+#  instance:
+#    hostname: server2
+#    prefer-ip-address: false
+#  client:
+#    service-url:
+#      defaultZone: http://server1:8000/eureka,http://server3:8002/eureka
+#
+#---
+## 集群节点——server3
+#spring:
+#  application:
+#    name: ad-eureka
+#  profiles: server3
+#
+#server:
+#  port: 8002
+#
+#eureka:
+#  instance:
+#    hostname: server3
+#    prefer-ip-address: false
+#  client:
+#    service-url:
+#      defaultZone: http://server1:8000/eureka,http://server2:8001/eureka

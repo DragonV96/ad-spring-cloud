@@ -8,6 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>ad-eureka</module>
+        <module>ad-gateway</module>
     </modules>
 
     <name>ad</name>
