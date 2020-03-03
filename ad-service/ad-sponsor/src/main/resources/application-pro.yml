@@ -1,0 +1,15 @@
+host:
+  public: 0.0.0.0
+  private: 192.168.1.158
+  local: 127.0.0.1
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${host.local}:3306/advertisement?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    tomcat:
+      max-active: 10
+      min-idle: 2
+      initial-size: 2
