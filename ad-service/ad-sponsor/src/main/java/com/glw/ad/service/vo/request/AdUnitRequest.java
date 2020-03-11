@@ -20,7 +20,7 @@ public class AdUnitRequest {
 
     private String unitName;
 
-    private Integer positionType;
+    private Byte positionType;
 
     private Long budget;
 

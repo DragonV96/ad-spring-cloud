@@ -21,7 +21,7 @@ public class AdUnitDistrict {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Integer id;
+    private Long id;
 
     /**
      * 推广单元 id

@@ -11,4 +11,9 @@ public class AdUnitResponse {
     private Long id;
 
     private String unitName;
+
+    public AdUnitResponse(Long id, String unitName) {
+        this.id = id;
+        this.unitName = unitName;
+    }
 }
