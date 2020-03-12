@@ -11,10 +11,12 @@
 
     <artifactId>ad-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <modules>
         <module>ad-common</module>
         <module>ad-sponsor</module>
+        <module>ad-swagger</module>
     </modules>
-    <packaging>pom</packaging>
 
 </project>

@@ -24,13 +24,19 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <springfox.version>2.9.2</springfox.version>
+        <swagger-ui.version>1.8.8</swagger-ui.version>
+        <lombok.version>1.16.18</lombok.version>
+        <fastjson.version>1.2.31</fastjson.version>
+        <mysql.version>5.1.47</mysql.version>
+        <commons-codec.version>1.9</commons-codec.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
+            <version>${lombok.version}</version>
         </dependency>
 
         <dependency>
