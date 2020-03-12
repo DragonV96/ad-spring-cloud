@@ -6,7 +6,7 @@ host:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://${host.local}:3306/advertisement?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://${host.local}:3306/advertisement?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
     tomcat:

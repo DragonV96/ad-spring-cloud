@@ -1,7 +1,7 @@
 server:
   port: 7000
-    servlet:
-      context-path: /ad-sponsor
+  servlet:
+    context-path: /ad-sponsor
 
 spring:
   application:
@@ -20,4 +20,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://server1.8000/eureka
+      defaultZone: http://server1:8000/eureka

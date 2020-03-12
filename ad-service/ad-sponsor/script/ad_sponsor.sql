@@ -77,7 +77,7 @@ CREATE TABLE `creative_unit` (
 
 -- 推广单元关键词 Feature
 CREATE TABLE `ad_unit_keyword` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `unit_id` int(11) NOT NULL COMMENT '推广单元 id',
   `keyword` varchar(30) NOT NULL COMMENT '关键词',
   PRIMARY KEY (`id`)
@@ -86,7 +86,7 @@ CREATE TABLE `ad_unit_keyword` (
 
 -- 推广单元兴趣 Feature
 CREATE TABLE `ad_unit_it` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `unit_id` int(11) NOT NULL COMMENT '推广单元 id',
   `it_tag` varchar(30) NOT NULL COMMENT '兴趣标签',
   PRIMARY KEY (`id`)
@@ -95,7 +95,7 @@ CREATE TABLE `ad_unit_it` (
 
 -- 推广单元地域 Feature
 CREATE TABLE `ad_unit_district` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `unit_id` int(11) NOT NULL COMMENT '推广单元 id',
   `province` varchar(30) NOT NULL COMMENT '省',
   `city` varchar(30) NOT NULL COMMENT '市',

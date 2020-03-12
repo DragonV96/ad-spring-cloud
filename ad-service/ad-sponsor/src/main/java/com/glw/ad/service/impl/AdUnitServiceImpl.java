@@ -19,6 +19,7 @@ import com.glw.ad.service.IAdUnitService;
 import com.glw.ad.service.vo.request.*;
 import com.glw.ad.service.vo.response.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import java.util.*;
@@ -30,6 +31,7 @@ import java.util.stream.Collectors;
  * @time : 0:48
  * @Description : 推广单元业务层接口实现
  */
+@Service
 public class AdUnitServiceImpl implements IAdUnitService {
 
     private final AdPlanRepository planRepository;
