@@ -30,6 +30,10 @@
         <fastjson.version>1.2.31</fastjson.version>
         <mysql.version>5.1.47</mysql.version>
         <commons-codec.version>1.9</commons-codec.version>
+        <commons-collections4.version>4.0</commons-collections4.version>
+        <mysql-binlog.version>0.13.0</mysql-binlog.version>
+        <kafka.version>2.1.5.RELEASE</kafka.version>
+        <kafka-client.version>2.1.1</kafka-client.version>
     </properties>
 
     <dependencies>
