@@ -10,7 +10,7 @@ import javax.persistence.*;
  * @author : glw
  * @date : 2020/3/3
  * @time : 23:39
- * @Description : 表名：ad_unit_district
+ * @Description : 推广单元地域 表名：ad_unit_district
  */
 @Data
 @NoArgsConstructor

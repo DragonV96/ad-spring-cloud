@@ -12,7 +12,7 @@ import java.util.Date;
  * @author : glw
  * @date : 2020/3/3
  * @time : 23:39
- * @Description : 表名：ad_unit
+ * @Description : 推广单元表 表名：ad_unit
  */
 @Data
 @NoArgsConstructor
