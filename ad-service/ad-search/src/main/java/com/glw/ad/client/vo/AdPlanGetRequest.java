@@ -10,7 +10,7 @@ import java.util.List;
  * @author : glw
  * @date : 2020/3/13
  * @time : 22:08
- * @Description :
+ * @Description : 推广计划请求获取实体
  */
 @Data
 @NoArgsConstructor

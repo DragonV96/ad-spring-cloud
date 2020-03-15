@@ -11,7 +11,7 @@
 
     <artifactId>ad-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>ad-common</name>
     <description>Spring Cloud Common</description>

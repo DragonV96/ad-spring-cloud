@@ -28,7 +28,7 @@ import org.springframework.web.client.RestTemplate;
 public class SearchApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SearchApplication.class);
+        SpringApplication.run(SearchApplication.class, args);
     }
 
     @Bean
