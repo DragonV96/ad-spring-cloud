@@ -19,15 +19,15 @@ public class CreativeObject {
 
     private String name;
 
-    private Integer type;
+    private Byte type;
 
-    private Integer materialType;
+    private Byte materialType;
 
     private Integer height;
 
     private Integer width;
 
-    private Integer auditStatus;
+    private Byte auditStatus;
 
     private String adUrl;
 

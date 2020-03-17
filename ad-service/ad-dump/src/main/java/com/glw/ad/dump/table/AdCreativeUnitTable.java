@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
  * @author : glw
  * @date : 2020/3/16
  * @time : 0:03
- * @Description : 创意与推广单元导出表
+ * @Description : 创意与推广单元关联导出表
  */
 @Data
 @NoArgsConstructor

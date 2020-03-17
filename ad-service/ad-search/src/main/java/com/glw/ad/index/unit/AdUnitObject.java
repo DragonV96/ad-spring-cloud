@@ -18,9 +18,9 @@ public class AdUnitObject {
 
     private Long unitId;
 
-    private Integer unitStatus;
+    private Byte unitStatus;
 
-    private Integer positionType;
+    private Byte positionType;
 
     private Long planId;
 

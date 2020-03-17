@@ -24,7 +24,12 @@ public class CommonUtils {
         return map.computeIfAbsent(key, k -> factory.get());
     }
 
-    public static String stringContact(String... args) {
+    /**
+     * 拼接字符串
+     * @param args
+     * @return
+     */
+    public static String stringConcat(String... args) {
         StringBuilder result = new StringBuilder();
         for (String arg : args) {
             result.append(arg);

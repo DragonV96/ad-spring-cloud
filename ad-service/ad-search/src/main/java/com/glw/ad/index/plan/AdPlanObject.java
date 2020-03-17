@@ -21,7 +21,7 @@ public class AdPlanObject {
 
     private Long userId;
 
-    private Integer planStatus;
+    private Byte planStatus;
 
     private Date startDate;
 
