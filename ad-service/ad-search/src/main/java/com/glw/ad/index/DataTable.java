@@ -4,6 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.core.PriorityOrdered;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -14,6 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @time : 11:07
  * @Description : 索引对象缓存实现
  */
+@Component
 public class DataTable implements ApplicationContextAware, PriorityOrdered {
 
     private static ApplicationContext applicationContext;
